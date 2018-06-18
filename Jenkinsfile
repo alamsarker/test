@@ -1,4 +1,4 @@
-Currentpeline {
+pipeline {
     agent { docker { image 'php' } }
     stages {
         stage('build') {
@@ -7,4 +7,4 @@ Currentpeline {
             }
         }
     }
-}h
+}
