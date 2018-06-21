@@ -26,12 +26,12 @@ pipeline {
         }
         success{
             slackSend channel: '#devops'
-                      color 'good'
+                      color: 'good'
                       message: 'The pipeline completed successfully'
         }
         failure{
             slackSend channel: '#devops'
-                      color 'good'
+                      color: 'good'
                       message: 'The pipeline has failed' 
         }
     }
