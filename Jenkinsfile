@@ -25,14 +25,10 @@ pipeline {
             echo 'I m in alawys mode'
         }
         success{
-            slackSend channel: '#devops'
-                      color: 'good'
-                      message: 'The pipeline completed successfully'
+            echo 'Success'
         }
         failure{
-            slackSend channel: '#devops'
-                      color: 'good'
-                      message: 'The pipeline has failed' 
+            echo 'Failed'
         }
     }
 }
