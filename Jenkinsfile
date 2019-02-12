@@ -3,32 +3,18 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'Step One'
-                sh 'Step Two'
+                sh 'Builing...'
             }
         }
         stage('Test') {
             steps {
-                sh 'Step Test One'
-                sh 'Step Test Two'
+                sh 'Testing...'
             }
         }
-        stage('E2E Test') {
+        stage('Deploy') {
             steps {
-                sh 'Step E2E Test One'
-                sh 'Step E2E Test Two'
+                sh 'Deploying...'
             }
-        }
-    }
-    post {
-        always {
-            echo 'I m in alawys mode'
-        }
-        success{
-            echo 'Success'
-        }
-        failure{
-            echo 'Failed'
         }
     }
 }
