@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'echo Testing...'
+                sh 'ls -l'
             }
         }
         stage('Deploy') {
