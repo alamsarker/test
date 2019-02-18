@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying after PR...'
+                echo 'Deploying after PR ooohoho...'
             }
         }
     }
