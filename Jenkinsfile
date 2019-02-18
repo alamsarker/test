@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo 'Auto Builing for PR...'
+                echo 'AUTO ... Auto Builing for PR...'
             }
         }
         stage('Test') {
