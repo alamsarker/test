@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo 'Builing...'
+                echo 'AUTO ... Auto Builing for PR...'
             }
         }
         stage('Test') {
@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying after PR...'
+                echo 'Deploying after PR ooohoho...'
             }
         }
     }
